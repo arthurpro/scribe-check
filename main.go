@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"time"
 )
 
 const (
@@ -75,11 +76,21 @@ Flags:
 	chosenCtx := chooseNumCtx(*numCtx, estTokens)
 	logf("scribe-check: ~%d tokens (limit %d), num_ctx=%d, calling %s\n", estTokens, *maxTokens, chosenCtx, *model)
 
+	var sp *Spinner
+	if !*quiet && isTerminal(os.Stderr) {
+		sp = NewSpinner(os.Stderr, fmt.Sprintf("scoring claims against sources (%s)", *model))
+		sp.Start()
+	}
+	start := time.Now()
 	report, raw, err := runReview(*host, *model, chosenCtx, article, sources)
+	if sp != nil {
+		sp.Stop()
+	}
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "review: %v\n", err)
 		os.Exit(1)
 	}
+	logf("scribe-check: done in %s\n", time.Since(start).Round(time.Second))
 
 	if *outFile != "" {
 		if err := os.WriteFile(*outFile, []byte(raw), 0644); err != nil {

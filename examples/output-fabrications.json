@@ -1,0 +1,37 @@
+{
+  "quotes_flagged": [
+    {
+      "passage": "*elementary cells*",
+      "location_hint": "They discovered that individual neurons in the primary visual cortex, the structures they later called *elementary cells*, fired most strongly",
+      "concern": "The article italicizes *elementary cells*, but the source uses the term *simple cells* when describing the structures Hubel and Wiesel found. This is terminology drift.",
+      "closest_source_match": "structures they later called *simple cells*, fired most strongly"
+    }
+  ],
+  "names_flagged": [
+    {
+      "entity": "Petrova",
+      "concern": "The article names 'Petrova' as a coauthor of the 1974 DCT paper. The source only lists Ahmed, Natarajan, and Rao. This name is fabricated.",
+      "closest_source_match": "(none)"
+    }
+  ],
+  "specifics_flagged": [
+    {
+      "claim": "The human eye contains roughly 240 million rod cells",
+      "concern": "The source provides a canonical figure of 'roughly 120 million rod cells'. The claim of 240 million is an off-by-two factor error.",
+      "closest_source_match": "The human eye contains roughly 120 million rod cells"
+    },
+    {
+      "claim": "and roughly six million cone cells",
+      "concern": "The source provides a canonical figure of 'roughly six million cone cells'. While the number is correct, the context of the preceding fabricated rod cell count makes the claim suspect.",
+      "closest_source_match": "and roughly six million cone cells"
+    },
+    {
+      "claim": "The DCT decomposes the block into sixty-four spatial-frequency components",
+      "concern": "The source confirms the block size (8x8) and the number of coefficients (64), but the claim lacks the necessary context that the components are spatial-frequency components, which is a minor omission of detail.",
+      "closest_source_match": "8×8 DCT yields 64 frequency-domain coefficients per block"
+    }
+  ],
+  "style_drift": [],
+  "temporal_drift": [],
+  "summary": "The article contains significant fabrication risks, primarily involving fabricated names and incorrect numerical counts. Specifically, the coauthor 'Petrova' is invented, and the rod cell count is doubled (240 million vs 120 million). Additionally, there is terminology drift regarding the description of visual structures (*elementary cells* vs *simple cells*). These errors undermine the factual accuracy of the technical claims."
+}

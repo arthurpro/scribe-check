@@ -1,0 +1,16 @@
+# Compiled binary
+/scribe-check
+
+# Go build artifacts
+*.exe
+*.test
+*.out
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+.idea/
+.vscode/
+*.swp

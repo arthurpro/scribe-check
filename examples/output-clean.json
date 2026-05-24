@@ -1,0 +1,51 @@
+{
+  "quotes_flagged": [
+    {
+      "passage": "*simple cells*",
+      "location_hint": "They discovered that individual neurons in the primary visual cortex",
+      "concern": "The article uses the term *simple cells*, but the source material (Hubel and Wiesel's work) uses the term *simple cells* correctly. However, the source does not italicize this term, and the article's use of italics suggests a potential drift from the source's presentation.",
+      "closest_source_match": "structures they later called *simple cells*"
+    }
+  ],
+  "names_flagged": [],
+  "specifics_flagged": [
+    {
+      "claim": "a thirty-year-old standard",
+      "concern": "The article uses the vague phrase 'thirty-year-old standard' without specifying the start date or end date, which is a generalization. The sources provide specific dates (1992) and time spans, but not the general 'thirty-year-old' descriptor.",
+      "closest_source_match": "thirty years between [the JPEG specification's CCITT approval on 18 September 1992]"
+    },
+    {
+      "claim": "120 million rod cells",
+      "concern": "The article claims '120 million rod cells'. While the source corroborates the figure '120 million rod cells', the article's phrasing is a direct quote from the source and is therefore not flagged as a fabrication, but the source passage is used to confirm the exact number.",
+      "closest_source_match": "The human eye contains roughly 120 million rod cells, which carry luminance information, and roughly six million cone cells, which carry colour"
+    },
+    {
+      "claim": "six million cone cells",
+      "concern": "The article claims 'six million cone cells'. While the source corroborates the figure 'six million cone cells', the article's phrasing is a direct quote from the source and is therefore not flagged as a fabrication, but the source passage is used to confirm the exact number.",
+      "closest_source_match": "The human eye contains roughly 120 million rod cells, which carry luminance information, and roughly six million cone cells, which carry colour"
+    },
+    {
+      "claim": "twenty-to-one ratio",
+      "concern": "The article calculates the ratio as 'twenty-to-one ratio' (120/6 = 20). The source corroborates the calculation and the ratio, but the article's phrasing is a derived statement, not a direct quote, making it a potential oversimplification of the source's factual claim.",
+      "closest_source_match": "Standard textbook figures: ~120M rods, ~6-7M cones per human retina; some studies report 92M/4.6M but 120M/6M is canonical"
+    },
+    {
+      "claim": "three and six cycles per degree",
+      "concern": "The article uses the range 'three and six cycles per degree' for the peak of the CSF. The source provides the range 'three and six cycles per degree' but the article's phrasing is a direct quote from the source and is therefore not flagged as a fabrication, but the source passage is used to confirm the exact numbers.",
+      "closest_source_match": "human contrast sensitivity function, which peaks somewhere between three and six cycles per degree of visual angle, falls off steadily below one cycle per degree, and falls off rapidly above roughly sixty cycles per degree"
+    },
+    {
+      "claim": "one cycle per degree",
+      "concern": "The article uses the specific threshold 'one cycle per degree' for the CSF. The source corroborates this specific number, and the article's phrasing is a direct quote from the source and is therefore not flagged as a fabrication, but the source passage is used to confirm the exact number.",
+      "closest_source_match": "falls off steadily below one cycle per degree"
+    },
+    {
+      "claim": "sixty cycles per degree",
+      "concern": "The article uses the specific threshold 'sixty cycles per degree' for the CSF. The source corroborates this specific number, and the article's phrasing is a direct quote from the source and is therefore not flagged as a fabrication, but the source passage is used to confirm the exact number.",
+      "closest_source_match": "and falls off rapidly above roughly sixty cycles per degree"
+    }
+  ],
+  "style_drift": [],
+  "temporal_drift": [],
+  "summary": "The article demonstrates a high degree of factual accuracy, successfully integrating complex technical and biological data points. The primary fabrication risk is low, as most specific claims are directly supported by the provided sources. The only minor flag relates to the use of the term *simple cells*, which, while technically correct, shows minor stylistic drift in its presentation. No major numerical or named entity fabrications were detected."
+}
